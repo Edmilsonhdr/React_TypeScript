@@ -1,35 +1,67 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+interface InfoAlunoProps {
+  nome: string;
+  idade: string;
 }
 
-export default App
+export default function App() {
+
+  // input valor inicial;
+  // setInput novo valor
+  const [input, setInput] = useState("");//inicia como vazio;
+  // const [aluno, setAluno] = useState<string | number>("");//inicia como vazio;<string | number> pode receber string ou number
+  const [idade, setIdade] = useState("");//inicia como vazio;
+
+  const [infoAluno, setInfoAluno] = useState<InfoAlunoProps>()
+
+  const [contador, setContador] = useState(0);
+
+  function mostrarAluno() {
+
+    setInfoAluno({
+      nome: input,
+      idade: idade,
+    });
+
+  }
+
+
+  function adicionar() { setContador(valorAtual => valorAtual + 1) }
+
+  function diminuir() {
+    if (contador === 0) {
+      return;
+    }
+    setContador(valorAtual => valorAtual - 1)
+  }
+
+  return (
+    <div>
+      <h1>Conhecendo useState</h1>
+
+      <input
+        placeholder="Digite o nome"
+        value={input}//recebe o valor vazio
+        onChange={(e) => setInput(e.target.value)}
+      />
+      <input
+        placeholder="Digite sua idade"
+        value={idade}//recebe o valor vazio
+        onChange={(e) => setIdade(e.target.value)}
+      />
+
+      <br />
+
+      <button onClick={mostrarAluno}> Mostrar Aluno</button>
+
+      <h3>Nome do aluno:{infoAluno?.nome}</h3>
+      <h3>Idade do aluno:{infoAluno?.idade}</h3>
+
+      <hr />
+      <br />
+      <h1>Contados com useState</h1>
+      <button onClick={adicionar}> + </button> {contador} <button onClick={diminuir}> - </button>
+    </div>
+  )
+}
