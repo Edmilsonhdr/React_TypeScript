@@ -1,6 +1,6 @@
 ## Dev Frases
 
-
+![Vite-React-TS-—-Mozilla-Firefox-2023-08-23-19-47-23](https://github.com/Edmilsonhdr/React_TypeScript/assets/92001139/793f53bd-7141-49ae-998c-d3f22db83557)
 
 O **Dev Frases** é uma aplicação web desenvolvida com React e TypeScript, criada com o objetivo de praticar o uso do hook `useState`. A aplicação oferece uma coleção de frases motivacionais para elevar o seu ânimo e trazer positividade ao seu dia. Através do uso do `useState`, a aplicação permite que você escolha entre diferentes categorias de frases e gere aleatoriamente uma frase inspiradora a partir da categoria selecionada.
 
@@ -17,13 +17,13 @@ O **Dev Frases** é uma aplicação web desenvolvida com React e TypeScript, cri
 1. Clone este repositório para o seu ambiente local.
 
 ```bash
-git clone 
+git clone git@github.com:Edmilsonhdr/React_TypeScript.git
 ```
 
 2. Instale as dependências necessárias.
 
 ```bash
-cd nome_da_pasta_do_projeto
+cd reactaula
 npm install
 ```
 
