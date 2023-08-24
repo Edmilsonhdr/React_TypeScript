@@ -1,4 +1,5 @@
 ## Descubra Sua Idade - Aplicativo de Cálculo de Idade (TypeScript)
+![data](https://github.com/Edmilsonhdr/React_TypeScript/assets/92001139/2c1dcc02-0896-45cc-90cb-3b10ceee11cc)
 
 O projeto "Descubra Sua Idade" é uma aplicação web desenvolvida em React com TypeScript, que permite aos usuários calcular sua idade com base no ano de nascimento fornecido. A aplicação consiste em um formulário simples onde o usuário insere seu nome e o ano de nascimento, e o aplicativo retorna a idade calculada.
 
