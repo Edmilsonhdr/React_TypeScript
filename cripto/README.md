@@ -1,4 +1,5 @@
 ## Sobre este Projeto de Criptomoedas em React com TypeScript
+![Vite-React-TS-—-Mozilla-Firefox-2023-08-24-18-58-46](https://github.com/Edmilsonhdr/React_TypeScript/assets/92001139/a6d24014-2aba-4d82-a638-734a29342b3d)
 
 Olá! Neste projeto, você encontrará uma aplicação que desenvolvi usando React e TypeScript para mostrar informações sobre criptomoedas, usando a API CoinLib. Eu me aprofundei em diversos aspectos do ecossistema React e integração do TypeScript para criar essa aplicação.
 
