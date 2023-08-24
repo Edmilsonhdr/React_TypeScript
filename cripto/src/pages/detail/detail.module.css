@@ -1,0 +1,28 @@
+.container{
+  padding: 0 14px;
+}
+
+.center{
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.content{
+  max-width: 420px;
+  background-color: #0f0f0f;
+  border-radius: 8px;
+  margin: 24px auto;
+  padding: 24px;
+}
+
+/* Espaço em todos menos no ultimo P */
+.content p:not(:last-of-type){
+ margin-bottom: 16px;
+}
+
+.profit{
+  color:#12F98A;
+}
+.loss{
+  color:#F91257;
+}
