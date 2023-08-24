@@ -1,5 +1,7 @@
-.container{
+
+.container {
   padding: 0 14px;
+  color: #FFF;
 }
 
 .center{
@@ -10,19 +12,25 @@
 .content{
   max-width: 420px;
   background-color: #0f0f0f;
-  border-radius: 8px;
   margin: 24px auto;
   padding: 24px;
+  border-radius: 8px;
 }
 
-/* Espaço em todos menos no ultimo P */
+.content p{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .content p:not(:last-of-type){
- margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .profit{
-  color:#12F98A;
+  color: #12f98a;
 }
+
 .loss{
-  color:#F91257;
+  color: #F91257;
 }
